@@ -7,7 +7,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- SWIPER CSS -->
-
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
     <!-- UNICONS -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 </head>
@@ -363,12 +363,14 @@
                 </div>
             </div>
         </section>
+
         <!-- ======= SERVICE SECTION ======= -->
         <section class="services section" id="services">
             <h2 class="section__title">Services</h2>
             <span class="section__subtitle">WHat i offfer</span>
             <div class="services__container container grid">
-                <!-- SV 1 -->
+
+                <!-- Service 1 -->
                 <div class="services__content">
                     <div>
                         <i class="uil uil-web-grid services__icon"></i>
@@ -378,6 +380,8 @@
                         view more
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
+
+                    <!-- Service 1 - Modal  -->
                     <div class="services__modal">
                         <div class="services__modal-content">
                             <h4 class="services__modal-title">Service 1</h4> <br> Name
@@ -399,7 +403,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- SV 2 -->
+
+                <!-- Service 2 -->
                 <div class="services__content">
                     <div>
                         <i class="uil uil-web-grid services__icon"></i>
@@ -410,6 +415,7 @@
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
 
+                    <!-- Service 2 - Modal  -->
                     <div class="services__modal">
                         <div class="services__modal-content">
                             <h4 class="services__modal-title">Service 2</h4> <br> Name
@@ -431,7 +437,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- SV 3 -->
+
+                <!-- Service 3 -->
                 <div class="services__content">
                     <div>
                         <i class="uil uil-web-grid services__icon"></i>
@@ -441,6 +448,8 @@
                         view more
                         <i class="uil uil-arrow-right button__icon"></i>
                     </span>
+
+                    <!-- Service 3 - Modal  -->
                     <div class="services__modal">
                         <div class="services__modal-content">
                             <h4 class="services__modal-title">Service 3</h4> <br> Name
@@ -464,9 +473,59 @@
                 </div>
             </div>
         </section>    
+        <!-- ======= PROJECTS SECTION ======= -->
+        <section class="projects section" id="projects">
+            <h2 class="section__title">Project</h2>
+            <span class="section__subtitle">My current projects</span>
+
+            <div class="projects__container container swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Project 1 -->
+                    <div class="projects__content grid swiper-slide">
+                        <img src="./assets/img/portfolio1.jpg" alt="" class="projects__img" style="width: 100%;">
+
+                        <div class="projects__data">
+                            <h3 class="projects__title">Website</h3>
+                            <p class="projects__decription">
+                                Lorem ipsum dolor, sit amet consectetur 
+                                adipisicing elit. Accusamus, qui?
+                            </p>
+                            <a href="" class="button button--flex button--small projects__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="projects__content grid swiper-slide">
+                        <img src="./assets/img/portfolio1.jpg" alt="" class="projects__img" style="width: 100%;">
+
+                        <div class="projects__data">
+                            <h3 class="projects__title">Something2</h3>
+                            <p class="projects__decription">
+                                Lorem ipsum dolor, sit amet consectetur 
+                                adipisicing elit. Accusamus, qui?
+                            </p>
+                            <a href="" class="button button--flex button--small projects__button">
+                                Demo
+                                <i class="uil uil-arrow-right button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>      
+                <div class="swiper-button-next">
+                    <i class="uil uil-angle-right-b swiper-projects-icon"></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class="uil uil-angle-left-b swiper-projects-icon"></i>
+                </div>
+                <div class="swiper-pagination"></div>        
+            </div>
+        </section>
     </main>
 
 </body>
 <!-- JS -->
+<script src="./assets/js/swiper-bundle.min.js"></script>
 <script src="./assets/js/main.js"></script>
 </html>

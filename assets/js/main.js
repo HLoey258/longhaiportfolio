@@ -74,21 +74,31 @@ const modalCloseBtns = document.querySelectorAll(".services__modal-close");
 const showModal = (btnIndex) => {
   modalView[btnIndex].classList.add("service__modal-show");
 };
-const closeModal = () => {
-  modalView.forEach((modal) => {
-    modal.classList.remove("service__modal-show");
-  });
-};
 
 modalBtns.forEach((button, index) => {
   button.addEventListener("click", () => {
     showModal(index);
   });
 });
+
 modalCloseBtns.forEach((button, index) => {
   button.addEventListener("click", () => {
     modalView.forEach((modalView) => {
       modalView.classList.remove("service__modal-show");
     });
   });
+});
+
+// Project swiper
+let swiper = new Swiper(".projects__container", {
+  cssMode: true,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
 });
