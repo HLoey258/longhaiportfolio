@@ -102,3 +102,29 @@ let swiper = new Swiper(".projects__container", {
     clickable: true,
   },
 });
+
+// Scroll active
+const sections = document.querySelectorAll("section[id]");
+
+const scrollActive = () => {
+  const scrollY = document.documentElement.scrollTop;
+  sections.forEach((currentSection) => {
+    const currentSectionHeight = currentSection.offsetHeight;
+    const currentTopHeight = currentSection.offsetTop - 50;
+    const currentId = currentSection.getAttribute("id");
+
+    if (
+      scrollY > currentTopHeight &&
+      scrollY <= currentSectionHeight + currentTopHeight
+    ) {
+      document
+        .querySelector(`.nav__menu a[href='#${currentId}']`)
+        .classList.add("active-link");
+    } else {
+      document
+        .querySelector(`.nav__menu a[href='#${currentId}']`)
+        .classList.remove("active-link");
+    }
+  });
+};
+window.addEventListener("scroll", scrollActive);
