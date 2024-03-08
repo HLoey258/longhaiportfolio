@@ -349,7 +349,23 @@ img{
 .skills__container{
     row-gap: 0;
 }
+.skills__list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#soft-skills{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: flex-start;
+}
 
+#soft-skills .skills__list-item{
+    display: block;
+    margin-left: .8rem;
+}
+#soft-skills h3 {
+    width: 100%;
+}
 .skills__header{
     display: flex;
     align-items: center;
@@ -382,10 +398,16 @@ img{
 }
 
 .skills__name{
+    width: 40px;
+    height: 40px;
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
 }
 
+.skills__list-item{
+    display: flex;
+    justify-content: center;
+}
 .skills-close .skills__list{
     height: 0;
     overflow: hidden;
