@@ -1,7 +1,7 @@
+// --------------------------------------------------
 const navToggle = document.getElementById("nav-toggle");
 const navMenu = document.getElementById("nav-menu");
 const navClose = document.getElementById("nav-close");
-
 // Show menu
 if (navToggle) {
   navToggle.addEventListener("click", () => {
@@ -104,27 +104,44 @@ let swiper = new Swiper(".projects__container", {
 });
 
 // Scroll active
-const sections = document.querySelectorAll("section[id]");
+// const sections = document.querySelectorAll("section[id]");
 
-const scrollActive = () => {
-  const scrollY = document.documentElement.scrollTop;
-  sections.forEach((currentSection) => {
-    const currentSectionHeight = currentSection.offsetHeight;
-    const currentTopHeight = currentSection.offsetTop - 50;
-    const currentId = currentSection.getAttribute("id");
+// const scrollActive = () => {
+//   const scrollY = document.documentElement.scrollTop;
+//   sections.forEach((currentSection) => {
+//     const currentSectionHeight = currentSection.offsetHeight;
+//     const currentTopHeight = currentSection.offsetTop - 50;
+//     const currentId = currentSection.getAttribute("id");
 
-    if (
-      scrollY > currentTopHeight &&
-      scrollY <= currentSectionHeight + currentTopHeight
-    ) {
-      document
-        .querySelector(`.nav__menu a[href='#${currentId}']`)
-        .classList.add("active-link");
-    } else {
-      document
-        .querySelector(`.nav__menu a[href='#${currentId}']`)
-        .classList.remove("active-link");
+//     if (
+//       scrollY > currentTopHeight &&
+//       scrollY <= currentSectionHeight + currentTopHeight
+//     ) {
+//       document
+//         .querySelector(`.nav__menu a[href='#${currentId}']`)
+//         .classList.add("active-link");
+//     } else {
+//       document
+//         .querySelector(`.nav__menu a[href='#${currentId}']`)
+//         .classList.remove("active-link");
+//     }
+//   });
+// };
+// window.addEventListener("scroll", scrollActive);
+
+const contactForm = document.querySelector("#submitContactForm");
+
+contactForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const name = $("#name").value;
+  const email = $("#email").value;
+  const message = $("#message").value;
+  window.alert(`
+    Underdeveloped!
+    Receive Information {
+      Name: ${name},
+      Email: ${email},
+      Message: ${message}
     }
-  });
-};
-window.addEventListener("scroll", scrollActive);
+  `);
+});
