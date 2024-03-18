@@ -66,31 +66,8 @@ tabs.forEach((tab) => {
   });
 });
 
-// service modal box
-const modalView = document.querySelectorAll(".services__modal");
-const modalBtns = document.querySelectorAll(".services__button");
-const modalCloseBtns = document.querySelectorAll(".services__modal-close");
-
-const showModal = (btnIndex) => {
-  modalView[btnIndex].classList.add("service__modal-show");
-};
-
-modalBtns.forEach((button, index) => {
-  button.addEventListener("click", () => {
-    showModal(index);
-  });
-});
-
-modalCloseBtns.forEach((button, index) => {
-  button.addEventListener("click", () => {
-    modalView.forEach((modalView) => {
-      modalView.classList.remove("service__modal-show");
-    });
-  });
-});
-
 // Project swiper
-let swiper = new Swiper(".projects__container", {
+let swiper = new Swiper(".mySwiper", {
   cssMode: true,
   loop: true,
   navigation: {
@@ -104,31 +81,30 @@ let swiper = new Swiper(".projects__container", {
 });
 
 // Scroll active
-// const sections = document.querySelectorAll("section[id]");
+const sections = document.querySelectorAll("section[id]");
+const scrollActive = () => {
+  const scrollY = document.documentElement.scrollTop;
+  sections.forEach((currentSection) => {
+    const currentSectionHeight = currentSection.offsetHeight;
+    const currentTopHeight = currentSection.offsetTop - 50;
+    const currentId = currentSection.getAttribute("id");
+    if (
+      scrollY > currentTopHeight &&
+      scrollY <= currentSectionHeight + currentTopHeight
+    ) {
+      document
+        .querySelector(`.nav__menu a[href='#${currentId}']`)
+        .classList.add("active-link");
+    } else {
+      document
+        .querySelector(`.nav__menu a[href='#${currentId}']`)
+        .classList.remove("active-link");
+    }
+  });
+};
+window.addEventListener("scroll", scrollActive);
 
-// const scrollActive = () => {
-//   const scrollY = document.documentElement.scrollTop;
-//   sections.forEach((currentSection) => {
-//     const currentSectionHeight = currentSection.offsetHeight;
-//     const currentTopHeight = currentSection.offsetTop - 50;
-//     const currentId = currentSection.getAttribute("id");
-
-//     if (
-//       scrollY > currentTopHeight &&
-//       scrollY <= currentSectionHeight + currentTopHeight
-//     ) {
-//       document
-//         .querySelector(`.nav__menu a[href='#${currentId}']`)
-//         .classList.add("active-link");
-//     } else {
-//       document
-//         .querySelector(`.nav__menu a[href='#${currentId}']`)
-//         .classList.remove("active-link");
-//     }
-//   });
-// };
-// window.addEventListener("scroll", scrollActive);
-
+// Submit respond Form
 const contactForm = document.querySelector("#submitContactForm");
 
 contactForm.addEventListener("submit", (event) => {
@@ -145,3 +121,16 @@ contactForm.addEventListener("submit", (event) => {
     }
   `);
 });
+
+// Show croll top button
+const scrollTopBtn = document.querySelector("#scroll-top");
+
+const showScrollTop = () => {
+  if (this.scrollY >= 560) {
+    scrollTopBtn.classList.add("show-scroll");
+  } else if (this.scrollY < 560) {
+    scrollTopBtn.classList.remove("show-scroll");
+  }
+};
+
+window.addEventListener("scroll", showScrollTop);
