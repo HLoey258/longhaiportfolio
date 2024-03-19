@@ -135,6 +135,16 @@ const showScrollTop = () => {
 
 window.addEventListener("scroll", showScrollTop);
 
+// Header box shadow
+const headerElement = document.querySelector("#header");
+const showBoxShadowHeader = () => {
+  if (this.scrollY >= 200) {
+    headerElement.classList.add("show-box-shadow");
+  } else if (this.scrollY < 200) {
+    headerElement.classList.remove("show-box-shadow");
+  }
+};
+window.addEventListener("scroll", showBoxShadowHeader);
 //  Project modal
 
 const projectModalView = document.querySelectorAll(".project__modal");
