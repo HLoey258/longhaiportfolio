@@ -134,3 +134,30 @@ const showScrollTop = () => {
 };
 
 window.addEventListener("scroll", showScrollTop);
+
+//  Project modal
+
+const projectModalView = document.querySelectorAll(".project__modal");
+const projectModalClose = document.querySelectorAll(".project-modal__close");
+const projectModalButton = document.querySelectorAll(".show-detail__button");
+
+// console.log(projectModalView[0].classList.remove("show-project-modal"));
+projectModalButton.forEach((btn, index) => {
+  btn.addEventListener("click", (event) => {
+    event.preventDefault();
+    showProjectModal(index);
+  });
+});
+const showProjectModal = (projectIndex) => {
+  projectModalView[projectIndex].classList.add("show-project-modal");
+};
+
+const hideProjectModal = () => {
+  projectModalView.forEach((project) => {
+    project.classList.remove("show-project-modal");
+  });
+};
+
+projectModalClose.forEach((closeBtn) => {
+  closeBtn.addEventListener("click", hideProjectModal);
+});
