@@ -1,6 +1,33 @@
 /*================= GLOBAL FONT =================*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+body{
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*================= CSS VARIABLE ================= */
 :root {
     --header-height: 3rem;
@@ -263,7 +290,10 @@ img{
     margin-bottom: var(--mb-2);
 }
 .home__scroll{
-
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .5rem;
 }
 .home__scroll-button{
     color: var(--first-color);
@@ -276,7 +306,7 @@ img{
 .home__scroll-mouse{
     font-size: 2rem;
 }
-.home__scroll-name{
+.home__scroll-name a{
     font-size: var(--small-font-size);
     color: var(--first-color);
     font-weight: var(--small-font-size);
@@ -623,17 +653,14 @@ img{
 }
 .project__modal{
     display: none;
-    position: absolute;
-    z-index: var(--z-model);
+    position: fixed;
+    left: 0;
     top: 0;
-    bottom: 0;
-    background-color: rgb(219, 217, 217);
+    background-color: rgba(0,0,0,.2);
     width: 100%;
-    border-radius: 15px;
-    border: 1px;
-    overflow-y: auto;
-    transition: .2s;
-  
+    height: 100%;
+    overflow: auto;
+    z-index: var(--z-model) ;
 }
 .tech-stack__item a{
     text-decoration: none;
@@ -647,8 +674,19 @@ img{
 .project-modal__container{
     padding: .6rem .6rem .6rem 1.25rem;
     position: relative;
+    width: 60vw;
+    height: 350px !important;
+    height: auto;
+    top: 20%;
+    left: 20%;
+    border-radius: 10px;
+    z-index: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: opacity .2s
 }
 .project-modal__close{
+    z-index: 1;
     position: absolute;
     right: .75rem;
 }

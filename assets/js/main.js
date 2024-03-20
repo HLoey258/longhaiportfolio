@@ -150,7 +150,9 @@ window.addEventListener("scroll", showBoxShadowHeader);
 const projectModalView = document.querySelectorAll(".project__modal");
 const projectModalClose = document.querySelectorAll(".project-modal__close");
 const projectModalButton = document.querySelectorAll(".show-detail__button");
-
+const projectModalContainer = document.querySelectorAll(
+  ".project-modal__container"
+);
 // console.log(projectModalView[0].classList.remove("show-project-modal"));
 projectModalButton.forEach((btn, index) => {
   btn.addEventListener("click", (event) => {
@@ -170,4 +172,12 @@ const hideProjectModal = () => {
 
 projectModalClose.forEach((closeBtn) => {
   closeBtn.addEventListener("click", hideProjectModal);
+});
+
+projectModalView.forEach((modal, index) => {
+  modal.addEventListener("click", (event) => {
+    if (event.target == projectModalView[index]) {
+      hideProjectModal();
+    }
+  });
 });

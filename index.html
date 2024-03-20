@@ -77,23 +77,25 @@
                     </div>
                     <div class="home__data">
                         <h1 class="home__title">Hi, I'm Hua Long Hai</h1>
-                        <p style="font-weight: 500; font-size: 20px; color: red;">
+                        <p style="font-weight: 500; font-size: 20px; color: red; cursor: pointer;">
                             Front-end Developer
                         </p>
                         <h3 class="home__subtitle">
                             <p style="font-size: 16px; margin-top: 15px; margin-bottom: 20px; font-weight: 400;">
-                                Thank you for visiting my portfolio! <br><br>
-                                Within these digital walls, you'll discover a diverse array of my endeavors.
-                                <br>Feel free to delve into my profile and don't hesitate to connect with me for any inquiries or potential collaborations.
-                                <br>Your presence here is greatly appreciated!
+                                Thank you for taking the time to visit my portfolio! <br><br>
+
+                                Inside, you'll find a diverse range of my work. Please feel free to browse through my profile and don't hesitate to get in touch with me for any inquiries or potential collaborations. 
+                                <br><br>
+                                Your presence here is greatly appreciated! 
                             </p>
-                            <!-- <a href="#contact" class="button button--flex">
-                                Contact me <i class="uil uil-message button__icon"></i>
-                            </a> -->
                             <div class="home__scroll">
                                 <a href="" class="home__scroll-button button--flex  ">
                                     <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                                    <span class="home__scroll-name">Scroll down for more</span>
+                                    <span class="home__scroll-name">
+                                        <a href="#about" style="text-decoration: none; font-size: 15px;">
+                                            Scroll down for more
+                                        </a>
+                                    </span>
                                     <i class="uil uil-arrow-down home__scroll-arrow"></i>
                                 </a>
                             </div>
@@ -206,7 +208,6 @@
                 </div>
             </div>
         </section>
-
         <!-- ======= QUALIFICATIONS SECTION ======= -->
         <section class="qualification section" id="qualification">
             <h2 class="section__title">Education - Work</h2>
@@ -348,6 +349,102 @@
                 <div class="swiper-pagination"></div>        
 
           
+                
+            </div>
+        </section>
+        <!-- ======= CONTACT SECTION ======= -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact</h2>
+            <span class="section__subtitle">--- Get in touch ---</span>
+
+            <div class="contact__container container">
+                <div>
+                    <div class="contact__infomation">
+                        <i class="uil uil-phone contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Call me</h3>
+                            <span class="contact__subtitle">0925624469</span>
+                        </div>
+                    </div>
+                    <div class="contact__infomation">
+                        <i class="uil uil-envelope contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">longhai.hua1006@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact__infomation">
+                        <i class="uil uil-github contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Github</h3>
+                            <span class="contact__subtitle">
+                                <a href="https://github.com/HLoey258" target="_blank">Direct to my github</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact__form grid" id="submitContactForm">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Name</label>
+                            <input type="text" id="name" class="contact__input">
+                        </div>
+                        <div class="contact__content">
+                            <label for="" class="contact__label">Email</label>
+                            <input type="text" id="email" class="contact__input">
+                        </div>
+                    </div>
+                    <div class="contact__content">
+                        <label for="" class="contact__label">Message</label>
+                        <textarea name="" id="message" cols="30" rows="7" class="contact__input"></textarea>
+                    </div>
+                    <div>                            
+                        <input type="submit" value="Send me message" class="contact__button button button--flex">
+                           
+                        </input>                 
+                    </div>
+                </form>
+            </div>
+        </section>
+         <!-- ======= FOOTER SECTION ======= -->
+        <section class="footer section">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">LONG HAI</h1>
+                        <span class="footer__subtitle">Front-end Developer</span>
+                    </div>
+                    <ul class="footer__links">
+                        <li>
+                            <a href="#home" class="footer__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="footer__link">About me</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="footer__link">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="footer__link">Contact me</a>
+                        </li>
+                    </ul>
+                    <div class="footer__socials">
+                        <a href="https://www.facebook.com/longhai1006/" target="_blank" class="footer__social">
+                            <i class="uil uil-facebook-f"></i>
+                        </a>
+                        <a href="https://github.com/HLoey258" target="_blank" class="footer__social">
+                            <i class="uil uil-github"></i>
+                        </a>                     
+                    </div>
+                </div>
+                <p class="footer__copyright" style="color: white; font-size: 13px;">All right reserved - Idea from bedimcode</p>
+            </div>
+        </section>
+         <!-- ======= SCROLL TOP BUTTON ======= -->
+        <a href="#home" class="scroll-top" id="scroll-top">
+            <i class="uil uil-arrow-up scroll-top__icon"></i>
+        </a>
+    </main>
                 <!-- Project 1 model  -->
                 <div class="project__modal">
                     <div class="project-modal__container">
@@ -426,104 +523,12 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-          <!-- ======= CONTACT SECTION ======= -->
-          <section class="contact section" id="contact">
-            <h2 class="section__title">Contact</h2>
-            <span class="section__subtitle">--- Get in touch ---</span>
-
-            <div class="contact__container container">
-                <div>
-                    <div class="contact__infomation">
-                        <i class="uil uil-phone contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Call me</h3>
-                            <span class="contact__subtitle">0925624469</span>
-                        </div>
-                    </div>
-                    <div class="contact__infomation">
-                        <i class="uil uil-envelope contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Email</h3>
-                            <span class="contact__subtitle">longhai.hua1006@gmail.com</span>
-                        </div>
-                    </div>
-                    <div class="contact__infomation">
-                        <i class="uil uil-github contact__icon"></i>
-                        <div>
-                            <h3 class="contact__title">Github</h3>
-                            <span class="contact__subtitle">
-                                <a href="https://github.com/HLoey258" target="_blank">Direct to my github</a>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <form class="contact__form grid" id="submitContactForm">
-                    <div class="contact__inputs grid">
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Name</label>
-                            <input type="text" id="name" class="contact__input">
-                        </div>
-                        <div class="contact__content">
-                            <label for="" class="contact__label">Email</label>
-                            <input type="text" id="email" class="contact__input">
-                        </div>
-                    </div>
-                    <div class="contact__content">
-                        <label for="" class="contact__label">Message</label>
-                        <textarea name="" id="message" cols="30" rows="7" class="contact__input"></textarea>
-                    </div>
-                    <div>                            
-                        <input type="submit" value="Send me message" class="contact__button button button--flex">
-                           
-                        </input>                 
-                    </div>
-                </form>
-            </div>
-          </section>
-          <!-- Footer -->
-          <section class="footer section">
-            <div class="footer__bg">
-                <div class="footer__container container grid">
-                    <div>
-                        <h1 class="footer__title">LONG HAI</h1>
-                        <span class="footer__subtitle">Front-end Developer</span>
-                    </div>
-                    <ul class="footer__links">
-                        <li>
-                            <a href="#home" class="footer__link">Home</a>
-                        </li>
-                        <li>
-                            <a href="#about" class="footer__link">About me</a>
-                        </li>
-                        <li>
-                            <a href="#skills" class="footer__link">Skills</a>
-                        </li>
-                        <li>
-                            <a href="#contact" class="footer__link">Contact me</a>
-                        </li>
-                    </ul>
-                    <div class="footer__socials">
-                        <a href="https://www.facebook.com/longhai1006/" target="_blank" class="footer__social">
-                            <i class="uil uil-facebook-f"></i>
-                        </a>
-                        <a href="https://github.com/HLoey258" target="_blank" class="footer__social">
-                            <i class="uil uil-github"></i>
-                        </a>                     
-                    </div>
-                </div>
-                <p class="footer__copyright" style="color: white; font-size: 13px;">All right reserved - Idea from bedimcode</p>
-            </div>
-          </section>
-
-          <!-- Scroll top button -->
-          <a href="#home" class="scroll-top" id="scroll-top">
-            <i class="uil uil-arrow-up scroll-top__icon">
-            </i>
-          </a>
-
-    </main>
+   
+    <!-- <div class="modal-test">
+        <div class="modal-test-container">
+            sdasd
+        </div>
+    </div> -->
 </body>
 
 
