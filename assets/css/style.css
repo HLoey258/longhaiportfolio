@@ -4,35 +4,11 @@
 body{
     position: relative;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*================= CSS VARIABLE ================= */
 :root {
     --header-height: 3rem;
     /* Main Color */
-    --hue-color: 250 ;
+    --hue-color: 220 ;
     --white-color: #fff;
 
     /* HSL colors */
