@@ -651,6 +651,7 @@ img{
     overflow: hidden;
     width: 370px;
 }
+
 .project__modal{
     display: none;
     position: fixed;
@@ -662,10 +663,18 @@ img{
     overflow: auto;
     z-index: var(--z-model) ;
 }
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
 .tech-stack__item a{
     text-decoration: none;
 }
 .show-project-modal{
+    animation: fadeIn 0.3s ease forwards;
     display: block;
 }
 .project-detail__list-item{
@@ -683,7 +692,7 @@ img{
     z-index: 1;
     background-color: #fff;
     overflow-y: auto;
-    transition: opacity .2s
+
 }
 .project-modal__close{
     z-index: 1;
