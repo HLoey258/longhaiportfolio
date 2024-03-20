@@ -10,7 +10,6 @@ body{
     /* Main Color */
     --hue-color: 220 ;
     --white-color: #fff;
-
     /* HSL colors */
     --first-color: hsl(var(--hue-color), 69%, 61%) ;
     --first-color-second: hsl(var(--hue-color), 69%, 61%) ;
