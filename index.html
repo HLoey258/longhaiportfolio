@@ -381,72 +381,119 @@
       <section class="projects section" id="projects">
         <h2 class="section__title">Project</h2>
         <span class="section__subtitle">My current projects</span>
-
-        <div class="projects__container container swiper mySwiper">
-          <div class="swiper-wrapper">
-            <!-- Project 1 -->
-            <div class="projects__content swiper-slide">
-              <img
-                src="./assets/img/OVION.png"
-                alt=""
-                class="projects__img"
-                style="width: 100%"
-              />
-
-              <div class="projects__data">
-                <h3 class="projects__title">OVION</h3>
-                <p class="projects__decription">
-                  E-commerce Shoe Selling Website Project Build a shoe selling
-                  website to help customers easily access products and simplify
-                  order management.
-                </p>
-                <div class="project-detail__button">
-                  <a
-                    href="#"
-                    class="button button--flex button--small show-detail__button"
-                  >
-                    Details
-                  </a>
+        <!-- <div class="button-wrap">
+         
+        </div> -->
+        <div class="project__container">
+          <div class="button-prev">
+            <i class="fa-solid fa-arrow-left"></i>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <!-- Project 1 -->
+              <div class="swiper-slide">
+                <div class="projects__wrap">
+                  <div class="projects__content">
+                    <div class="projects__img">
+                      <img src="./assets/img/OVION.png" alt="" />
+                    </div>
+                    <div class="projects__desc">
+                      <div class="projects__name">
+                        <h3>OVION</h3>
+                      </div>
+                      <div class="projects__detail">
+                        E-commerce Shoe Selling Website Project Build a shoe
+                        selling website to help customers easily access products
+                        and simplify order management.
+                      </div>
+                      <div class="projects__detail-button show-detail__button">
+                        <a href="">Details</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 2 -->
+              <div class="swiper-slide">
+                <div class="projects__wrap">
+                  <div class="projects__content">
+                    <div class="projects__img">
+                      <img src="./assets/img/portfolio-project.jpg" alt="" />
+                    </div>
+                    <div class="projects__desc">
+                      <div class="projects__name">
+                        <h3>Portfolio</h3>
+                      </div>
+                      <div class="projects__detail">
+                        A website to introduce my self and provide a brief
+                        overview of my skills and expertise. Display a
+                        collection of my portfolio projects with descriptions,
+                        images, and links to project details.
+                      </div>
+                      <div class="projects__detail-button show-detail__button">
+                        <a href="">Details</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 3 -->
+              <div class="swiper-slide">
+                <div class="projects__wrap">
+                  <div class="projects__content">
+                    <div class="projects__img">
+                      <img src="./assets/img/project3.jpg" alt="" />
+                    </div>
+                    <div class="projects__desc">
+                      <div class="projects__name">
+                        <h3>The New Gym</h3>
+                      </div>
+                      <div class="projects__detail">
+                        I am replicating the user interface of The New Gym
+                        website. Through this project, I aim to closely mimic
+                        its layout and user experience using HTML, CSS, and
+                        JavaScript. This endeavor serves as an opportunity for
+                        me to hone my frontend development skills while gaining
+                        insights into effective web design practices.
+                      </div>
+                      <div class="projects__detail-button show-detail__button">
+                        <a href="">Details</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Project 4 -->
+              <div class="swiper-slide">
+                <div class="projects__wrap">
+                  <div class="projects__content">
+                    <div class="projects__img">
+                      <img src="./assets/img/project4.jpg" alt="" />
+                    </div>
+                    <div class="projects__desc">
+                      <div class="projects__name">
+                        <h3>Lumi - Smoothie</h3>
+                      </div>
+                      <div class="projects__detail">
+                        Lumi is an e-commerce website built on the WordPress
+                        platform, specializing in providing high-quality
+                        smoothies, juices, and kombucha products. The interface
+                        is designed to create an easy and convenient shopping
+                        experience for customers. Leveraging WordPress, I
+                        utilize plugins and themes to build a flexible and
+                        easy-to-manage website, while providing features such as
+                        secure payments and efficient product management.
+                      </div>
+                      <div class="projects__detail-button show-detail__button">
+                        <a href="">Details</a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-            <!-- Project 2 -->
-            <div class="projects__content grid swiper-slide">
-              <img
-                src="./assets/img/portfolio-project.jpg"
-                alt=""
-                class="projects__img"
-                style="width: 100%"
-              />
-
-              <div class="projects__data">
-                <h3 class="projects__title">Portfolio</h3>
-                <p class="projects__decription">
-                  A website to introduce my self and provide a brief overview of
-                  my skills and expertise. Display a collection of my portfolio
-                  projects with descriptions, images, and links to project
-                  details.
-                </p>
-                <div class="project-detail__button">
-                  <a
-                    href="#"
-                    class="button button--flex button--small show-detail__button"
-                  >
-                    Details
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
-
-          <div class="swiper-button-next">
-            <i class="uil uil-angle-right-b swiper-projects-icon"></i>
-          </div>
-
-          <div class="swiper-button-prev">
-            <i class="uil uil-angle-left-b swiper-projects-icon"></i>
-          </div>
-          <div class="swiper-pagination"></div>
+          <div class="button-next"><i class="fa-solid fa-arrow-right"></i></div>
         </div>
       </section>
       <!-- ======= CONTACT SECTION ======= -->
@@ -563,6 +610,7 @@
       </a>
     </main>
     <!-- ======= PROJECT MODALS ======= -->
+    <!-- Project 1 -->
     <div class="project__modal">
       <div class="project-modal__container">
         <div class="project-modal__close">
@@ -610,7 +658,7 @@
         </div>
       </div>
     </div>
-
+    <!-- Project 2 -->
     <div class="project__modal">
       <div class="project-modal__container">
         <div class="project-modal__close">
@@ -650,6 +698,103 @@
               <strong>Navigation Menu</strong> Implement a navigation menu for
               easy access to difference sections of the website, including Home,
               About, Education-Work, Projects, Contact.
+            </li>
+            <li class="project-detail__list-item">
+              <strong>Responsive Design</strong> The website is fully responsive
+              an optimized for various devices
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Project 3 -->
+    <div class="project__modal">
+      <div class="project-modal__container">
+        <div class="project-modal__close">
+          <i class="uil uil-times"></i>
+        </div>
+        <div class="project-modal__title">Website</div>
+        <div class="project-modal__data">
+          <div class="project-modal__name">The New Gym</div>
+          <ul class="project__tech-stack">
+            <li class="tech-stack__item">
+              <strong>Tech Stack: </strong> HTML, CSS, JavaScript, Github Page
+            </li>
+            <li class="tech-stack__item">
+              <strong>Quick demo: </strong>
+              <a target="_blank" href="https://hloey258.github.io/gym-clone/"
+                >URL</a
+              >
+            </li>
+            <li class="tech-stack__item">
+              <strong>Link repo:</strong>
+              <a
+                target="_blank"
+                href="https://github.com/HLoey258/gym-clone.git"
+                >Github</a
+              >
+            </li>
+          </ul>
+          <strong>Key Features</strong>
+          <ul class="project-detail__list">
+            <li class="project-detail__list-item">
+              <strong>Home Page</strong> Introduce about the Gym and service
+            </li>
+            <li class="project-detail__list-item">
+              <strong>Animation Element</strong> Implement a animation elements
+              for website to look smoother
+            </li>
+            <li class="project-detail__list-item">
+              <strong>Responsive Design</strong> The website is fully responsive
+              an optimized for various devices
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="project__modal">
+      <div class="project-modal__container">
+        <div class="project-modal__close">
+          <i class="uil uil-times"></i>
+        </div>
+        <div class="project-modal__title">Website</div>
+        <div class="project-modal__data">
+          <div class="project-modal__name">Lumi - Kombucha smoothie</div>
+          <ul class="project__tech-stack">
+            <li class="tech-stack__item">
+              <strong>Tech Stack: </strong> Wordpress, Google AppScript,
+              E-Commerce Plugin, SEO, Payment API, Github Page
+            </li>
+            <li class="tech-stack__item">
+              <strong>Quick demo: </strong>
+              The host is no longer available, sorry for this inconvenience
+            </li>
+            <li class="tech-stack__item">
+              <strong>Link video:</strong>
+              <a
+                target="_blank"
+                href="https://www.youtube.com/watch?v=8O7stvV3llQ&t=15s"
+                >Video</a
+              >
+            </li>
+          </ul>
+          <strong>Key Features</strong>
+          <ul class="project-detail__list">
+            <li class="project-detail__list-item">
+              <strong>Home Page</strong> Introduce the products which is
+              Kombucha Juice.
+            </li>
+            <li class="project-detail__list-item">
+              <strong>Tracking Order</strong> By using Woocommerce Plugin and
+              Google Appscript, website can track for real-time order.
+            </li>
+            <li class="project-detail__list-item">
+              <strong>Management Account</strong> By using Google API, user can
+              create account via Google
+            </li>
+            <li class="project-detail__list-item">
+              <strong>Payment methods</strong> User can use variety of payment
+              method such as MOMO, E-bank or COD.
             </li>
             <li class="project-detail__list-item">
               <strong>Responsive Design</strong> The website is fully responsive
