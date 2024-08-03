@@ -645,24 +645,28 @@ img {
     opacity: 1;
   }
 }
+.tech-stack__item {
+  margin-bottom: 10px;
+}
 .tech-stack__item a {
   text-decoration: none;
 }
 .show-project-modal {
   animation: fadeIn 0.3s ease forwards;
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .project-detail__list-item {
   margin-bottom: var(--mb-0-75);
 }
 .project-modal__container {
-  padding: 0.6rem 0.6rem 0.6rem 1.25rem;
+  padding: 20px;
   position: relative;
-  width: 60vw;
-  height: 350px !important;
+  width: fit-content;
+  max-width: 1000px;
   height: auto;
-  top: 20%;
-  left: 20%;
   border-radius: 10px;
   z-index: 1;
   background-color: #fff;
@@ -680,13 +684,16 @@ img {
 }
 .project-modal__data {
   margin-top: var(--mb-0-75);
+  padding: 20px;
 }
 .project-modal__name {
   font-size: 24px;
   font-weight: var(--font-semi-bold);
   color: rgb(255, 0, 0);
+  margin-bottom: 20px;
 }
 .project-detail__list {
+  margin-top: 10px;
   padding-left: 0.75rem;
 }
 
@@ -718,6 +725,9 @@ img {
   padding: 15px;
 }
 .project__img-wrap {
+}
+.project__img {
+  object-fit: cover;
 }
 .project__container {
   display: flex;
@@ -757,7 +767,7 @@ img {
   margin-bottom: 10px;
 }
 .projects__detail {
-  text-align: left;
+  text-align: justify;
   margin-bottom: 10px;
 }
 .projects__detail-button {
